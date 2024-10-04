@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Crestal Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/images/logo/logo.png",
+    "light": "/images/logo/logo.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -18,74 +18,79 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@crestal.xyz"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.crestal.xyz"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
+ 
+ "navigation": [
+  {
+    "group": "API Reference",
+    "pages": [
+      "api-reference/get-an-api-key",
+      "api-reference/create-an-api-key",
+      "api-reference/get-chat-history",
+      "api-reference/send-a-chat-to-chat-server",
+      "api-reference/get-da-static-info-will-remove-later",
+      "api-reference/get-deployments-based-on-user_address-or-deployed-proposal-id-or-hash",
+      "api-reference/create-a-deployment-info",
+      "api-reference/get-deployments-via-request-id",
+      "api-reference/create-a-worker-deployment-info",
+      "api-reference/update-a-worker-deployment-status",
+      "api-reference/get-a-deployment-info",
+      "api-reference/get-health_check",
+      "api-reference/list-da-dynamic-data",
+      "api-reference/create-da-dynamic-data",
+      "api-reference/get-a-list-of-da-graph-info",
+      "api-reference/get-da-static-info",
+      "api-reference/login-to-get-session-cookie",
+      "api-reference/store-da-dynamic-data",
+      "api-reference/get-nonce-for-auth-purpose",
+      "api-reference/create-an-da-in-db",
+      "api-reference/get-a-list-of-project-info",
+      "api-reference/create-an-project-info",
+      "api-reference/get-an-project-info",
+      "api-reference/update-a-project-info",
+      "api-reference/update-a-project-status-into-cancelled",
+      "api-reference/update-a-project-status-into-terminated",
+      "api-reference/create-an-proposal",
+      "api-reference/get-recommended-proposal-from-sovlers",
+      "api-reference/get-recommend-proposals-from-solvers",
+      "api-reference/accept-an-list-of-proposal-from-solvers",
+      "api-reference/get-a-proposal-by-id",
+      "api-reference/get-all-quests",
+      "api-reference/create-an-quest",
+      "api-reference/get-weekly-quests-for-all-user",
+      "api-reference/update-quest",
+      "api-reference/get-user-referral",
+      "api-reference/claim-refer-code",
+      "api-reference/interact-with-dashboard",
+      "api-reference/get-top-x-scores",
+      "api-reference/create-a-solver",
+      "api-reference/get-a-solver",
+      "api-reference/refresh-user-token",
+      "api-reference/get-all-user-quests",
+      "api-reference/import-an-user-complete-quests",
+      "api-reference/get-user-info-by-user-address",
+      "api-reference/get-all-whitelisted-wallet-address",
+      "api-reference/add-a-address-into-whitelist",
+      "api-reference/get-a-a-list-of-worker",
+      "api-reference/get-a-worker"
+    ]
+  },
+  {
+    "group": "Metadata",
+    "pages": [
+      "api-reference/metadata/get-all-metadata-metrics"
+    ]
+  }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/crestal",
+    "github": "https://github.com/crestalxyz",
+    "linkedin": "https://www.linkedin.com/company/crestal"
   }
 }
