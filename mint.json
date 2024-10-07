@@ -2,95 +2,99 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Crestal Documentation",
   "logo": {
-    "dark": "/images/logo/logo.png",
-    "light": "/images/logo/logo.png"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#3B82F6",
+    "light": "#E0F2FE",
+    "dark": "#2563EB",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#3B82F6",
+      "to": "#2563EB"
     }
   },
-  "topbarLinks": [
+  "navigation": [
     {
-      "name": "Support",
-      "url": "mailto:support@crestal.xyz"
+      "group": "🚀 Getting Started",
+      "pages": ["guides/testnet", "guides/quests"]
+    },
+    {
+      "group": "🔐 API Reference",
+      "pages": [
+        {
+          "group": "Authentication APIs",
+          "pages": [
+            "api-reference/get-health_check",
+            "api-reference/retrieve-nonce-for-authentication",
+            "api-reference/authenticate-and-obtain-session-cookie",
+            "api-reference/refresh-authentication-token"
+          ]
+        },
+        {
+          "group": "Project Management APIs",
+          "pages": [
+            "api-reference/create-new-project-information",
+            "api-reference/terminate-a-project",
+            "api-reference/cancel-a-project",
+            "api-reference/retrieve-project-information",
+            "api-reference/update-project-information",
+            "api-reference/retrieve-a-list-of-user-projects"
+          ]
+        },
+        {
+          "group": "Deployment APIs",
+          "pages": [
+            "api-reference/retrieve-deployment-information",
+            "api-reference/retrieve-deployments-based-on-various-parameters",
+            "api-reference/create-deployment-information",
+            "api-reference/retrieve-worker-deployments-by-request-id",
+            "api-reference/create-worker-deployment-information",
+            "api-reference/update-worker-deployment-status"
+          ]
+        },
+        {
+          "group": "Data Availability APIs",
+          "pages": [
+            "api-reference/store-da-dynamic-data",
+            "api-reference/list-data-availability-da-dynamic-data",
+            "api-reference/create-da-dynamic-data",
+            "api-reference/create-a-new-da-entry-in-the-database",
+            "api-reference/retrieve-da-static-information-temporary-endpoint",
+            "api-reference/retrieve-da-static-information",
+            "api-reference/retrieve-da-graph-information"
+          ]
+        },
+        {
+          "group": "Proposals & Quests APIs",
+          "pages": [
+            "api-reference/retrieve-recommended-proposals-from-solvers",
+            "api-reference/retrieve-a-proposal-by-id",
+            "api-reference/retrieve-recommended-proposals-from-solvers-1",
+            "api-reference/accept-a-list-of-proposals-from-solvers",
+            "api-reference/create-a-new-proposal",
+            "api-reference/retrieve-all-quests",
+            "api-reference/create-a-new-quest",
+            "api-reference/retrieve-all-user-quests",
+            "api-reference/import-user-completed-quests",
+            "api-reference/get-weekly-quests-for-all-user",
+            "api-reference/update-quest"
+          ]
+        },
+        {
+          "group": "Metadata APIs",
+          "pages": [
+            "api-reference/metadata/get-all-metadata-metrics"
+          ]
+        }
+      ]
     }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.crestal.xyz"
-  },
- 
- "navigation": [
-  {
-    "group": "API Reference",
-    "pages": [
-      "api-reference/get-an-api-key",
-      "api-reference/create-an-api-key",
-      "api-reference/get-chat-history",
-      "api-reference/send-a-chat-to-chat-server",
-      "api-reference/get-da-static-info-will-remove-later",
-      "api-reference/get-deployments-based-on-user_address-or-deployed-proposal-id-or-hash",
-      "api-reference/create-a-deployment-info",
-      "api-reference/get-deployments-via-request-id",
-      "api-reference/create-a-worker-deployment-info",
-      "api-reference/update-a-worker-deployment-status",
-      "api-reference/get-a-deployment-info",
-      "api-reference/get-health_check",
-      "api-reference/list-da-dynamic-data",
-      "api-reference/create-da-dynamic-data",
-      "api-reference/get-a-list-of-da-graph-info",
-      "api-reference/get-da-static-info",
-      "api-reference/login-to-get-session-cookie",
-      "api-reference/store-da-dynamic-data",
-      "api-reference/get-nonce-for-auth-purpose",
-      "api-reference/create-an-da-in-db",
-      "api-reference/get-a-list-of-project-info",
-      "api-reference/create-an-project-info",
-      "api-reference/get-an-project-info",
-      "api-reference/update-a-project-info",
-      "api-reference/update-a-project-status-into-cancelled",
-      "api-reference/update-a-project-status-into-terminated",
-      "api-reference/create-an-proposal",
-      "api-reference/get-recommended-proposal-from-sovlers",
-      "api-reference/get-recommend-proposals-from-solvers",
-      "api-reference/accept-an-list-of-proposal-from-solvers",
-      "api-reference/get-a-proposal-by-id",
-      "api-reference/get-all-quests",
-      "api-reference/create-an-quest",
-      "api-reference/get-weekly-quests-for-all-user",
-      "api-reference/update-quest",
-      "api-reference/get-user-referral",
-      "api-reference/claim-refer-code",
-      "api-reference/interact-with-dashboard",
-      "api-reference/get-top-x-scores",
-      "api-reference/create-a-solver",
-      "api-reference/get-a-solver",
-      "api-reference/refresh-user-token",
-      "api-reference/get-all-user-quests",
-      "api-reference/import-an-user-complete-quests",
-      "api-reference/get-user-info-by-user-address",
-      "api-reference/get-all-whitelisted-wallet-address",
-      "api-reference/add-a-address-into-whitelist",
-      "api-reference/get-a-a-list-of-worker",
-      "api-reference/get-a-worker"
-    ]
-  },
-  {
-    "group": "Metadata",
-    "pages": [
-      "api-reference/metadata/get-all-metadata-metrics"
-    ]
-  }
   ],
   "footerSocials": {
-    "x": "https://x.com/crestal",
-    "github": "https://github.com/crestalxyz",
+    "twitter": "https://x.com/crestalnetwork",
+    "youtube": "https://www.youtube.com/@Crestalnetwork",
+    "github": "https://github.com/crestalnetwork",
     "linkedin": "https://www.linkedin.com/company/crestal"
   }
 }
